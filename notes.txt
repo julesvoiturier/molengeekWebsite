@@ -1,2 +1,6 @@
 Sections width => 70%
 
+text
+
+laptop L 17px
+laptop 12px
