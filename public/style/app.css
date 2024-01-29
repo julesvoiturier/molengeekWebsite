@@ -1,0 +1,20 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 99vw;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+}
+body header {
+  width: 70%;
+  height: 700px;
+  background: blue;
+}
+
+/*# sourceMappingURL=app.css.map */
