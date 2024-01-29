@@ -3,18 +3,106 @@ html {
 }
 
 body {
-  width: 99vw;
-  background: red;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: arial;
+  margin: 0;
+  letter-spacing: 2px;
+  font-size: 14px;
 }
-body header {
+
+header {
+  width: 100%;
+}
+header .navbar {
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid rgb(13, 13, 13);
+}
+header .navbar .navbarLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  background: white;
+}
+header .navbar .navbarCenter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(13, 13, 13);
+  height: 100%;
   width: 70%;
-  height: 700px;
-  background: blue;
+}
+header .navbar .navbarCenter a {
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: 0.05s;
+}
+header .navbar .navbarCenter a:hover {
+  color: rgb(249, 255, 133);
+}
+header .navbar .navbarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+  transition: 0.2s;
+}
+header .navbar .navbarRight .contactUs {
+  width: 80%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(13, 13, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .navbarRight:hover {
+  background: rgb(249, 255, 133);
+}
+header .navbar .selectLanguage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+  background: rgb(13, 13, 13);
+}
+header .navbar .selectLanguage .flag {
+  background: yellow;
+  width: 100%;
+  height: 50%;
+}
+header .navbar .selectLanguage .language {
+  color: white;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .logo {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
