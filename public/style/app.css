@@ -22,8 +22,9 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100px;
+  height: 65px;
   border-bottom: 2px solid rgb(13, 13, 13);
+  border-top: 2px solid rgb(13, 13, 13);
 }
 header .navbar .navbarLeft {
   display: flex;
@@ -37,23 +38,22 @@ header .navbar .navbarCenter {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: rgb(13, 13, 13);
+  background: rgb(165, 255, 184);
   height: 100%;
   width: 70%;
+  border-right: 2px solid rgb(13, 13, 13);
+  border-left: 2px solid rgb(13, 13, 13);
 }
 header .navbar .navbarCenter a {
   height: 100%;
   display: flex;
-  color: white;
+  color: rgb(13, 13, 13);
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  transition: 0.05s;
-}
-header .navbar .navbarCenter a:hover {
-  color: rgb(249, 255, 133);
+  transition: 0.1s;
 }
 header .navbar .navbarRight {
   display: flex;
@@ -73,9 +73,13 @@ header .navbar .navbarRight .contactUs {
   align-items: center;
 }
 header .navbar .navbarRight:hover {
-  background: rgb(249, 255, 133);
+  background: rgb(13, 13, 13);
+}
+header .navbar .navbarRight:hover .contactUs {
+  color: white;
 }
 header .navbar .selectLanguage {
+  border-right: 2px solid rgb(13, 13, 13);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,6 +107,190 @@ header .navbar .logo {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+header .navbar .burgerMenu {
+  display: none;
+  height: 100%;
+  background: rgb(165, 255, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .burgerMenu {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  header {
+    width: 96%;
+  }
+  .navbar {
+    margin-top: 15px !important;
+    height: 50px !important;
+    font-size: 11px;
+    width: 100% !important;
+  }
+  .burgerMenu {
+    display: none !important;
+  }
+  .selectLanguage {
+    width: 20% !important;
+  }
+  .logo {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  header {
+    width: 100%;
+  }
+  header .navbar {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 2px solid rgb(13, 13, 13);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+  }
+  header .navbar .navbarLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background: white;
+  }
+  header .navbar .navbarCenter {
+    display: none;
+  }
+  header .navbar .navbarCenter a {
+    height: 100%;
+    display: flex;
+    color: rgb(13, 13, 13);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.05s;
+  }
+  header .navbar .navbarRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25% !important;
+    transition: 0.2s;
+    background: white;
+    border-left: 2px solid rgb(13, 13, 13);
+  }
+  header .navbar .navbarRight .contactUs {
+    width: 80%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar .navbarRight:hover {
+    background: rgb(165, 255, 184);
+  }
+  header .navbar .selectLanguage {
+    border-right: 2px solid rgb(13, 13, 13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    background: rgb(13, 13, 13);
+  }
+  header .navbar .selectLanguage .flag {
+    background: yellow;
+    width: 100%;
+    height: 50%;
+  }
+  header .navbar .selectLanguage .language {
+    color: white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .navbar .burgerMenu {
+    display: flex;
+    width: 22%;
+    border-right: 2px solid;
+    background: white;
+  }
+  header .navbar .logo {
+    width: 70%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    width: 100vw;
+  }
+  header {
+    width: 100%;
+  }
+  header .navbar {
+    margin: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .navbarRight {
+    display: none !important;
+  }
+  .navbarCenter {
+    display: none !important;
+  }
+  .navbarLeft {
+    width: 100% !important;
+    flex-direction: row-reverse;
+    border: none !important;
+  }
+  .navbarLeft .burgerMenu {
+    width: 20% !important;
+  }
+  .navbarLeft .logo {
+    width: 20%;
+  }
+  .navbarLeft .selectLanguage {
+    border: none !important;
+  }
+}
+main {
+  width: 70%;
+}
+main .banner {
+  width: 100%;
+  aspect-ratio: 2.5/1;
+  margin-top: 65px;
+}
+main .banner .bannerImage {
+  border: 2px solid rgb(13, 13, 13);
+  height: 100%;
+  background-image: url(./../../../public/src/img/banner1Image.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=app.css.map */
