@@ -38,7 +38,7 @@ header .navbar .navbarCenter {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: rgb(255, 244, 124);
+  background: rgb(124, 255, 144);
   height: 100%;
   width: 70%;
   border-right: 2px solid rgb(13, 13, 13);
@@ -89,7 +89,7 @@ header .navbar .selectLanguage {
   background: rgb(13, 13, 13);
 }
 header .navbar .selectLanguage .flag {
-  background: rgb(255, 244, 124);
+  background: rgb(124, 255, 144);
   width: 100%;
   height: 50%;
 }
@@ -111,7 +111,7 @@ header .navbar .logo {
 header .navbar .burgerMenu {
   display: none;
   height: 100%;
-  background: rgb(255, 244, 124);
+  background: rgb(124, 255, 144);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +203,7 @@ header .navbar .burgerMenu {
     align-items: center;
   }
   header .navbar .navbarRight:hover {
-    background: rgb(255, 244, 124);
+    background: rgb(124, 255, 144);
   }
   header .navbar .selectLanguage {
     border-right: 2px solid rgb(13, 13, 13);
@@ -450,6 +450,72 @@ main .s2page1 .textboxContainer1 div {
     text-align: center;
     font-size: 12px;
     line-height: 20px;
+  }
+}
+.s3page1 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding-bottom: 50px;
+  gap: 40px;
+}
+.s3page1 .eventsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+.s3page1 .eventsContainer .eventToCome {
+  border: 2px solid rgb(13, 13, 13);
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.s3page1 .eventsContainer .eventToCome .date {
+  border-right: 2px solid rgb(13, 13, 13);
+  background: rgb(124, 255, 144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  font-size: 30px;
+  font-weight: 900;
+}
+.s3page1 .eventsContainer .eventToCome .eventName {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  padding-left: 9%;
+  align-items: center;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .eventsContainer {
+    height: 350px !important;
+  }
+}
+@media (max-width: 768px) and (min-width: 577px) {
+  .s3page1 {
+    flex-direction: column;
+  }
+  .s3page1 .eventsContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .s3page1 {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  .s3page1 .eventsContainer {
+    flex-direction: column;
   }
 }
 
