@@ -1,0 +1,111 @@
+@media (max-width: 992px) and (min-width: 769px)
+
+
+    .s2page2
+        height: auto
+        width: 100%
+        display: flex
+        justify-content: center
+        .foramtionsContainer
+            width: 70%
+            height: 100%
+            // background: red
+            padding-top: 100px
+            padding-bottom: 100px
+            .formations
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 100px
+                width: 100%
+                height: auto
+                .longOrShort
+                    height: 70px
+                    width: 70%
+                    display: flex
+                    outline: 2px solid $dark
+                    .long
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: 12px
+                        font-weight: 900
+                        height: 100%
+                        width: 50%
+                        background: $yellow
+                    .short
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: 12px
+                        font-weight: 900
+                        height: 100%
+                        width: 51%
+                        border-left: solid 2px $dark
+
+        .formationsContainer
+            .formationBox
+                width: 100% !important
+                .formationTitle
+                    width: 75%
+                    height: 100%
+                    background: white
+                    border: 2px solid $dark
+                .formationDate
+                    width: 25%
+                    height: 100%
+                    background: $dark
+                    border: 2px solid $dark
+
+@media (max-width: 768px) and (min-width: 577px)
+
+
+    .formationsContainer
+        padding: 0 !important
+    .longOrShort
+        width: 100% !important
+    .long
+        font-size: 13px !important
+    .short
+        font-size: 13px !important
+    .formationBox
+        width: 100% !important
+        height: 100px !important
+
+@media (max-width: 576px)
+
+
+
+    .formationsContainer
+        padding-top: 0px !important
+        
+    .longOrShort
+        width: 100% !important
+        flex-direction: column
+        height: 100px !important
+    .long
+        border: none !important
+        font-size: 12px !important
+        width: 100% !important
+        height: 50% !important
+    .short
+        border: none !important
+        font-size: 12px !important
+        width: 100% !important
+        border-top: 2px solid $dark !important
+        height: 50% !important
+
+    .formations
+        gap: 40px !important
+    .formationsContainer
+        padding-top: 60px
+        .formations
+            gap: 60px !important
+
+    .formationBox
+        width: 100% !important
+        height: 100px !important
+
+    
+    
+
