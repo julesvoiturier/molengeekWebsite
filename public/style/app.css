@@ -457,7 +457,7 @@ main .s2page1 .textboxContainer1 div {
   display: flex;
   justify-content: center;
   width: 70%;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   gap: 40px;
 }
 .s3page1 .eventsContainer {
@@ -512,10 +512,43 @@ main .s2page1 .textboxContainer1 div {
 @media (max-width: 576px) {
   .s3page1 {
     padding-top: 50px;
+    padding-bottom: 50px;
     flex-direction: column;
   }
   .s3page1 .eventsContainer {
     flex-direction: column;
+  }
+}
+.s4page1 {
+  width: 100%;
+  height: 220px;
+  padding-bottom: 100px;
+}
+.s4page1 .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(124, 255, 144);
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid rgb(13, 13, 13);
+  border-bottom: 2px solid rgb(13, 13, 13);
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .s4page1 {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) and (min-width: 577px) {
+  .s4page1 {
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .s4page1 {
+    padding-top: 10px;
+    height: 140px;
   }
 }
 
