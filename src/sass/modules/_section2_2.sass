@@ -1,9 +1,11 @@
 
 .s2page2
+    background: #f2f2f2
     height: auto
     width: 100%
     display: flex
     justify-content: center
+    border-top: 2px solid $dark
     .foramtionsContainer
         width: 70%
         height: 100%
@@ -26,22 +28,27 @@
                     display: flex
                     justify-content: center
                     align-items: center
-                    font-size: 14px
+                    font-size: 16px
                     font-weight: 900
                     height: 100%
                     width: 50%
-                    background: $yellow
+                    // background: $yellow
+                    background: white
+                    transition: 0.1s
                 .short
                     display: flex
                     justify-content: center
                     align-items: center
-                    font-size: 14px
+                    font-size: 16px
                     font-weight: 900
                     height: 100%
                     width: 51%
                     border-left: solid 2px $dark
+                    background: white
+                    transition: 0.1s
 
-            .formationsContainer
+            .formationsContainer2
+                font-size: 16px
                 // background: red
                 width: 100%
                 // height: 800px
@@ -50,20 +57,71 @@
                 justify-content: space-between
                 gap: 40px
                 .formationBox
-                    height: 140px
-                    width: 46%
+                    height: 200px
+                    width: 100%
                     display: flex
                     .formationTitle
-                        width: 75%
+                        width: 80%
                         height: 100%
                         background: white
                         border: 2px solid $dark
+                        // background: $yellow
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        .trainingTitle
+                            text-transform: uppercase
+                            font-size: 22px
+                            margin-bottom: 15px
+                            font-weight: 900
+                        p
+                            padding: 0px
+                            margin: 5px
+                            padding-left: 30px
                     .formationDate
-                        width: 25%
+                        text-transform: uppercase
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        gap: 10px
+                        text-align: center
+                        width: 20%
                         height: 100%
                         background: $dark
                         border: 2px solid $dark
+                        color: white
+                        span
+                            font-size: 60px
+                            width: 100%
 
 
-.greenButton
-    background: $yellow
+.shortFormationBox
+    width: 100%
+    display: flex
+    border: 2px solid $dark
+    .pack
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 30px 30px
+        width: 30%
+        background: $dark
+        color: white
+        // font-weight: 900
+        text-transform: uppercase
+    .shortTitle
+        display: flex
+        align-items: center
+        padding: 30px 30px
+        width: 70%
+        background: white
+        // border-right: 2px solid $dark
+
+.chosenButton
+    background: $yellow !important
+
+.formationsContainer2:first-child
+    display: none !important
+
+.disappear
+    display: none !important

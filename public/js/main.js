@@ -1,3 +1,5 @@
 import * as INSTANCE from './modules/instances.js'
+import * as TRAININGS from './modules/trainings.js'
 
-// console.log(INSTANCE.molengeekContact);
+
+INSTANCE.socialLinksAdd()

@@ -1,13 +1,15 @@
-import data from './../../json/dataMolengeek.json' assert {type: "json"}
+import data from '../../json/dataMolengeek.json' assert {type: "json"}
 
+
+//!BURGER MENU TOGGLE
 export let burgerMenuButton = document.querySelector(".burgerMenu")
 export let burgerMenu = document.querySelector(".actualBurgerMenu")
-
 burgerMenuButton.addEventListener("click", () => {
     burgerMenu.classList.toggle("toggleDisplay")
 })
 
 
+//! CONTACT INFOS
 export let molengeekContact = data.molengeekInfo
 export let  contactText = document.querySelector(".contactText")
 
@@ -23,14 +25,10 @@ for (const key in molengeekContact) {
 
 
 
-
+//! CAROUSEL PARTNERS
 export let sect4Home = document.querySelector(".s4page1")
 export let carousel = document.querySelector(".carousel")
 export let logos = data.partenaires
-console.log(logos);
-
-// carousel.style.whiteSpace = "nowrap"
-// carousel.style.overflow = "hidden"
 
 for (const key in logos) {
     if (Object.hasOwnProperty.call(logos, key)) {
@@ -39,6 +37,7 @@ for (const key in logos) {
         img.src = element.logo
         img.style.width = "200px"
         img.style.marginRight = "100px"
+        img.style.mixBlendMode = "multiply"
         carousel.appendChild(img)
     }
 }
@@ -48,27 +47,46 @@ sect4Home.appendChild(carouselClone)
 
 
 
-// for (let d = 0; d < array.length; d++) {
-//     const element = array[d];
-    
-// }
+//! FOOTER LINKS
 
-// export let logo = data.molengeekLogo
-// let footerLogo = document.querySelectorAll('.footerLogo');
-// for (let i = 0; i < footerLogo.length; ++i) {
-//     footerLogo[i].style.backgroundImage = `url(${logo})`
-// }
+export let socialLinks = data.reseauxSociaux
+export let footerIcons = document.querySelectorAll(".footerLink")
 
-// export let long = document.querySelector(".long")
-// export let short = document.querySelector(".short")
+ export let socialLinksAdd = () => {
+    let count = 0
+    for (let key in socialLinks) {
+        if (Object.hasOwnProperty.call(socialLinks, key)) {
+            let element = socialLinks[key];
+            footerIcons[count].href = element
+            count += 1
+        }
+    }
+}
 
-// long.addEventListener("click", () => {
-//     console.log("hello");
-//     long.style.background = "rgb(140, 255, 171)"
-//     short.style.background ="white"
-// })
 
-// short.addEventListener("click", () => {
-//     short.style.background = "rgb(140, 255, 171)"
-//     long.style.background ="white"
-// })
+
+
+
+//! EVENTS TO COME (SEANCES INFO)
+
+export let events = data.formations.seancesInfos
+export let eventDate = document.querySelectorAll(".eventToCome .date")
+export let eventTitle = document.querySelectorAll(".eventToCome .eventName")
+
+let count2 = 0
+for (let key in events) {
+    if (Object.hasOwnProperty.call(events, key)) {
+        let element = events[key];
+        eventDate[count2].innerText = element.date
+        eventTitle[count2].innerText = element.nom
+        count2 += 1
+    }
+}
+
+
+export let logo = data.molengeekLogo
+let footerLogo = document.querySelectorAll('.footerLogo');
+
+for (let i = 0; i < footerLogo.length; ++i) {
+    footerLogo[i].style.backgroundImage = `url(${logo})`
+}

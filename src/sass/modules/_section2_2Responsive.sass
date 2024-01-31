@@ -1,111 +1,203 @@
 @media (max-width: 992px) and (min-width: 769px)
 
-
-    .s2page2
-        height: auto
-        width: 100%
-        display: flex
-        justify-content: center
-        .foramtionsContainer
-            width: 70%
-            height: 100%
-            // background: red
-            padding-top: 100px
-            padding-bottom: 100px
-            .formations
-                display: flex
-                flex-direction: column
-                align-items: center
-                gap: 100px
-                width: 100%
-                height: auto
-                .longOrShort
-                    height: 70px
-                    width: 70%
-                    display: flex
-                    outline: 2px solid $dark
-                    .long
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        font-size: 12px
-                        font-weight: 900
-                        height: 100%
-                        width: 50%
-                        background: $yellow
-                    .short
-                        display: flex
-                        justify-content: center
-                        align-items: center
-                        font-size: 12px
-                        font-weight: 900
-                        height: 100%
-                        width: 51%
-                        border-left: solid 2px $dark
-
-        .formationsContainer
-            .formationBox
-                width: 100% !important
-                .formationTitle
-                    width: 75%
-                    height: 100%
-                    background: white
-                    border: 2px solid $dark
-                .formationDate
-                    width: 25%
-                    height: 100%
-                    background: $dark
-                    border: 2px solid $dark
-
 @media (max-width: 768px) and (min-width: 577px)
 
-
-    .formationsContainer
-        padding: 0 !important
     .longOrShort
         width: 100% !important
-    .long
-        font-size: 13px !important
-    .short
-        font-size: 13px !important
+    .trainingTitle
+        font-size: 20px !important
+        margin-top: 25px !important
+    .formationTitle
+        padding-right: 30px
+        margin-bottom: 25px
+        width: 70%
+    .formationDate
+        width: 40% !important
+        height: 100%
+        display: flex
+        // padding-top: 15px
+        // padding-bottom: 15px
+        
+        span
+            font-size: 40px !important
+    .formationTitle
+        // padding-top: 15px
+        // padding-bottom: 15px
+        p
+            font-size: 16px
+            margin-bottom: 15px !important
     .formationBox
-        width: 100% !important
-        height: 100px !important
+        height: auto !important
+
+    .foramtionsContainer
+        height: auto !important
+    .conditions
+        display: none
+    .formations
+        gap: 40px !important
+
+
 
 @media (max-width: 576px)
 
-
-
-    .formationsContainer
-        padding-top: 0px !important
-        
     .longOrShort
         width: 100% !important
-        flex-direction: column
+    .trainingTitle
+        font-size: 20px !important
+        margin: 0px !important
+        padding: 0px !important
+        margin-top: 25px !important
+    .formationTitle
+        padding-top: 20px
+        padding-right: 0px !important
+        margin-bottom: 0px !important
+        width: 100% !important
+    .formationDate
+        display: none !important
+        width: 40% !important
         height: 100px !important
-    .long
-        border: none !important
-        font-size: 12px !important
+        display: flex
+        justify-content: center !important
+        align-items: center !important
+        flex-direction: row !important
+        font-size: 20px
         width: 100% !important
-        height: 50% !important
-    .short
-        border: none !important
-        font-size: 12px !important
-        width: 100% !important
-        border-top: 2px solid $dark !important
-        height: 50% !important
-
-    .formations
-        gap: 40px !important
-    .formationsContainer
-        padding-top: 60px
-        .formations
-            gap: 60px !important
+        font-weight: 900
+        
+        span
+            width: auto !important
+            font-size: 20px !important
+    .formationTitle
+        p
+            text-align: center
+            width: 100% !important
+            font-size: 16px
+            padding: 0px !important
+            margin: 0px !important
+            margin-bottom: 15px !important
 
     .formationBox
         width: 100% !important
-        height: 100px !important
+        height: auto !important
+        flex-direction: column
+
+    .foramtionsContainer
+        height: auto !important
+        padding-top: 60px !important
+        padding-bottom: 60px !important
+
+    .timeInfo
+        display: none
+    .conditions
+        display: none
+
+    .formations
+        gap: 40px !important
+
+
+        //   .s2page2
+        // .formationsContainer
+        //     .formations
+        //         .longOrShort
+        //             .long
+        //             .short
+        //         .formationsContainer2
+        //             .formationBox
+        //                 .formationTitle
+        //                     .trainingTitle
+        //                     p
+        //                  .formationDate
 
     
     
+
+
+// .s2page2
+//     height: auto
+//     width: 100%
+//     display: flex
+//     justify-content: center
+//     .foramtionsContainer
+//         width: 70%
+//         height: 100%
+//         // background: red
+//         padding-top: 100px
+//         padding-bottom: 100px
+//         .formations
+//             display: flex
+//             flex-direction: column
+//             align-items: center
+//             gap: 100px
+//             width: 100%
+//             height: auto
+//             .longOrShort
+//                 height: 70px
+//                 width: 70%
+//                 display: flex
+//                 outline: 2px solid $dark
+//                 .long
+//                     display: flex
+//                     justify-content: center
+//                     align-items: center
+//                     font-size: 14px
+//                     font-weight: 900
+//                     height: 100%
+//                     width: 50%
+//                     background: $yellow
+//                 .short
+//                     display: flex
+//                     justify-content: center
+//                     align-items: center
+//                     font-size: 14px
+//                     font-weight: 900
+//                     height: 100%
+//                     width: 51%
+//                     border-left: solid 2px $dark
+
+//             .formationsContainer
+//                 font-size: 16px
+//                 // background: red
+//                 width: 100%
+//                 // height: 800px
+//                 display: flex
+//                 flex-wrap: wrap
+//                 justify-content: space-between
+//                 gap: 40px
+//                 .formationBox
+//                     height: 200px
+//                     width: 100%
+//                     display: flex
+//                     .formationTitle
+//                         width: 80%
+//                         height: 100%
+//                         background: white
+//                         border: 2px solid $dark
+//                         display: flex
+//                         flex-direction: column
+//                         justify-content: center
+//                         .trainingTitle
+//                             text-transform: uppercase
+//                             font-size: 22px
+//                             margin-bottom: 15px
+//                             font-weight: 900
+//                         p
+//                             padding: 0px
+//                             margin: 5px
+//                             padding-left: 30px
+//                     .formationDate
+//                         text-transform: uppercase
+//                         display: flex
+//                         flex-direction: column
+//                         justify-content: center
+//                         gap: 10px
+//                         text-align: center
+//                         width: 20%
+//                         height: 100%
+//                         background: $dark
+//                         border: 2px solid $dark
+//                         color: white
+//                         span
+//                             font-size: 60px
+//                             width: 100%
+
 

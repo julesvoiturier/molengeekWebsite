@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/style/app.css">
+    <link rel="stylesheet" href="./../public/style/app.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,16 +15,16 @@
                     <div class="language">FR</div>
                 </div>
                 <div class="burgerMenu">BURGER</div>
-                <div class="logo">LOGO</div>
+                <a class="logo" href="../index.html">LOGO</a>
             </div>
 
             <div class=" navbarCenter">
                 <a href="./trainings.html">TRAININGS</a>
-                <a href="">COWORKING</a>
-                <a href="">AGENDA</a>
-                <a href="">ABOUT US</a>
-                <a href="">PRESSE</a>
-                <a href="">JOBS</a>
+                <a href="./coworking.html">COWORKING</a>
+                <a href="./agenda.html">AGENDA</a>
+                <a href="./aboutUs.html">ABOUT US</a>
+                <a href="./press.html">PRESSE</a>
+                <a href="./jobs.html">JOBS</a>
             </div>
 
             <div class="navbarRight">
@@ -46,17 +46,28 @@
                         <div class="long">LONG TRAININGS</div>
                         <div class="short">SHORT TRAININGS</div>
                     </div>
-                    <div class="formationsContainer">
+
+
+                    <div class="formationsContainer2 longFormations">
                         <div class="formationBox">
                             <div class="formationDate"></div>
-                            <div class="formationTitle"></div>
-                        </div>
-                        <div class="formationBox">
-                            <div class="formationDate"></div>
-                            <div class="formationTitle"></div>
+                            <div class="formationTitle">
+                                <p class="trainingTitle"></p>
+                                <p></p>
+                                <p class="timeInfo"></p>
+                                <p class="conditions"></p>
+                            </div>
                         </div>
                         
                     </div>
+                    <div class="formationsContainer2 shortFormations">
+                        <div class="shortFormationBox">
+                            <div class="pack">hello</div>
+                            <div class="shortTitle">salut</div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -70,16 +81,35 @@
                 </div>
             </div>
         </section>
+
+        <section class="s4page2">
+            <div class="s4page2Content">
+                <div class="testimonialTitle">RETOURS</div>
+                <div class="videosTestimonial">
+                    <div class="videoTestimonial video1"></div>
+                    <div class="videoTestimonial video2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s5page2">
+            <div class="s5page2Content">
+                <div class="faqTitle">FAQ</div>
+                <button class="question">This is a question</button>
+                <div class="answer"><p>This is the answer</p></div>
+            </div>
+        </section>
+
     </main>
 
 
     <footer>
         <div class="footer">
            <div class="footerLinks">
-               <button class="footerLink footerLink1"></button>
-               <button class="footerLink footerLink2"></button>
-               <button class="footerLink footerLink3"></button>
-               <button class="footerLink footerLink4"></button>
+               <a class="footerLink footerLink1"></a>
+               <a class="footerLink footerLink2"></a>
+               <a class="footerLink footerLink3"></a>
+               <a class="footerLink footerLink4"></a>
            </div>
            <div class="bottomFooter">
                <div class="footerLogo"></div>
@@ -88,6 +118,6 @@
         <div class="copyright">Copyright © 2024. Jules Voiturier.</div>
    </footer>
 
-   <script type="module" src="./public/js/main.js"></script>
+   <script type="module" src="./../public/js/pages/trainings.js"></script>
 </body>
 </html>
