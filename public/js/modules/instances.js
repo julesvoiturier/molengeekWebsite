@@ -84,9 +84,9 @@ for (let key in events) {
 }
 
 
-export let logo = data.molengeekLogo
-let footerLogo = document.querySelectorAll('.footerLogo');
+// export let logo = data.molengeekLogo
+// let footerLogo = document.querySelectorAll('.footerLogo');
 
-for (let i = 0; i < footerLogo.length; ++i) {
-    footerLogo[i].style.backgroundImage = `url(${logo})`
-}
+// for (let i = 0; i < footerLogo.length; ++i) {
+//     footerLogo[i].style.backgroundImage = `url(${logo})`
+// }
